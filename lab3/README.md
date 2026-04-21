@@ -76,20 +76,12 @@
 Ожидается папка с parquet-файлами следующего вида:
 
 ```text
-data/raw/
+data/
 ├── Москва_2019-01-01_2019-12-31.parquet
 ├── Москва_2020-01-01_2020-12-31.parquet
 ├── ...
 ├── Сочи_2025-01-01_2025-12-31.parquet
 ```
-
-Notebook также умеет автоматически найти данные по пути:
-
-- `data/raw`
-- `./data/raw`
-- `../data/raw`
-- `/mnt/data/weather_lab3_data`
-
 ---
 
 ## Установка и запуск
@@ -118,10 +110,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Распакуйте данные
-Распакуйте архив с parquet-файлами в папку `data/raw`.
-
-### 5. Запустите Jupyter
+### 4. Запустите Jupyter
 
 ```bash
 jupyter notebook
